@@ -1,3 +1,3 @@
-Phan Minh Huy: Backend (Node.js + Express)
-Huynh Chi Phuc : Frontend (React)
+Phan Minh Huy: Frontend (React)
+Huynh Chi Phuc : Backend (Node.js + Express)
 Nguyen Tri Vinh: Database (MongoDB
