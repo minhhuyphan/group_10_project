@@ -13,7 +13,7 @@ const UserList = () => {
   const fetchUsers = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:3000/users');
+      const response = await axios.get('http://localhost:5000/users');
       setUsers(response.data);
       setError(null);
     } catch (err) {
@@ -26,7 +26,7 @@ const UserList = () => {
 
   const deleteUser = async (userId) => {
     try {
-      await axios.delete(`http://localhost:3000/users/${userId}`);
+      await axios.delete(`http://localhost:5000/users/${userId}`);
       setUsers(users.filter(user => user.id !== userId));
     } catch (err) {
       setError('Không thể xóa người dùng');
