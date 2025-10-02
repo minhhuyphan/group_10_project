@@ -42,7 +42,7 @@ const AddUser = ({ onUserAdded }) => {
         age: parseInt(userData.age)
       };
 
-      const response = await axios.post('http://localhost:3000/users', newUser);
+      const response = await axios.post('http://localhost:5000/users', newUser);
       
       // Reset form
       setUserData({ name: '', email: '', age: '' });
